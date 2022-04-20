@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" lang="en">
+<head>
+    <title>LibraryName</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</head>
+
+<body>
+   <div> 
+       <!-- //to do poza fundal sub navbar -->
+    <nav>
+        <label class="logo">Biblioteca Online</label>
+
+        <ul id="dashList">
+            <li><a  href="Dashboard.html">Home</a></li>
+            <li><a  href="AboutPage.html">About</a></li>
+            <li><a  href="SubjectsPage.html">Subjects</a></li>
+            <li><a  href="SearchPage.html">Search</a></li>
+            <li><a  href="#">Contact</a></li>
+
+            <li id="username-loggedin"><a class="active" href="Startup/LoginPage.html">Login</a></li>
+            <li class="hideLI"><a href="#" >Logout</a></li>
+            
+        </ul>
+
+        <label id="icon" >
+            <p class="dashLines" onclick="change()">&#8803;</p>
+        </label>
+
+    </nav>
+    <div class="about-section">
+        <div class="area" id="contactArea">
+            <header>PROFILE</header>
+            <form action="#">
+                <div class="contact1">
+                    <input id="fullname" type="text" placeholder="Full name" readonly value="Teodor Amzuloiu">
+                    <label class="switch">
+                        <input  id="check1" name="check1" type="checkbox" onclick="setReadOnlyFunc(1)">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="space"></div>
+                <div class="contact1">
+                    <input id="username" type="text" placeholder="Username" readonly value="Teodor123">
+                    <label class="switch">
+                        <input id="check2" name="check2" type="checkbox" onclick="setReadOnlyFunc(2)">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="space"></div>
+                <div class="contact1">
+                    <input id="email" type="email" placeholder="Email" readonly value="amzteodor@gmail.com">
+                    <label class="switch">
+                        <input  id="check3" name="check3" type="checkbox" onclick="setReadOnlyFunc(3)">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="space"></div>
+                <div class="contact1">
+                    <input id="phone" type="phone" placeholder="Phone" readonly value="0712345678">
+                    <label class="switch">
+                        <input  id="check4" name="check4" type="checkbox" onclick="setReadOnlyFunc(4)">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="space"></div>
+                <div class="contact1">
+                    <input id="pass" type="password" placeholder="New Pasword" readonly>
+                    <label class="switch">
+                        <input  id="check5" name="check5" type="checkbox" onclick="setReadOnlyFunc(5)">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="space"></div>
+                
+                <div class="submit-btn">
+                    <input type="submit" value="Save changes">
+                </div>
+            </form>
+            
+            
+        </div>
+    </div>
+
+    <div class="dashboard-background"></div>
+
+
+</body>
+
+
+</html>

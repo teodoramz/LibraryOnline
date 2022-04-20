@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.bg-image{
+    background: url("../Images/lib2.jpg");
+    height:100vh;
+    background-size:cover;
+    background-position: center;
+}
+
+.bg-image2{
+    background: url("../Images/lib2.jpg");
+    height:100vh;
+    background-size:cover;
+    background-position: center;
+}
+
+
+.bg-image2:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background:rgba(0,0,0,0.3);
+}
+
+
+
+.bg-image:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background:rgba(0,0,0,0.3);
+}
+
+.container{
+    position:absolute;
+    top:50%;
+    left:50%;
+    z-index: 999;
+    text-align: center;
+    padding:60px 32px;
+    width:370px;
+    transform: translate(-50%, -50%);
+    background:rgba(255,255,255,0.1);
+    box-shadow:  -1px 4px 28px 0px rgba(0,0,0,10);
+}
+
+
+.container-text{
+    
+    position:absolute;
+    top:45%;
+    left:50%;
+    z-index: 999;
+    text-align: center;
+    padding:60px 32px;
+    transform: translate(-50%, -50%);
+    background:rgba(255,255,255,0.1);
+    box-shadow:  -1px 4px 28px 0px rgba(0,0,0,10);
+
+
+    width:750px;
+    max-height:700px;
+    overflow:auto;
+
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.container-text2{
+    
+    position:relative;
+    top:80%;
+    left:50%;
+
+    z-index: 999;
+    text-align: center;
+    padding:60px 32px;
+    transform: translate(-50%, -15%);
+
+
+
+    width:750px;
+    max-height:5px;
+
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgba(90, 90, 90);
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+.container-text p{
+   color:white;
+}
+
+
+.container-text header {
+    color: #fff;
+    font-size: 30px;
+    font-weight:600;
+    margin:0 0 10px 0;
+    text-align: center;
+     text-justify: inter-word;
+}
+
+
+.container header {
+    color: #fff;
+    font-size: 30px;
+    font-weight:600;
+    margin:0 0 10px 0;
+}
+
+.cred1{
+    position: relative;
+    height:45px;
+    width:100%;
+    display: flex;
+    border: none;
+}
+
+.cred2{
+    position: relative;
+    height:45px;
+    width:100%;
+    display: flex;
+    border: none;
+
+}
+
+.cred1 input{
+    height: 100%;
+    width: 100%;
+    background: whitesmoke;
+    border: none;
+    overflow: none;
+    color: #222;
+    font-size:14px;
+    text-align: center;
+    border-radius: 15px;
+    outline: none !important;
+}
+
+
+.cred2 input {
+    height: 100%;
+    width: 100%;
+    background: whitesmoke;
+    border: none;
+    overflow: none;
+    color: #222;
+    font-size:14px;
+    text-align: center;
+    border-radius: 15px;
+    outline: none !important;
+}
+
+.space{
+    margin-top:16px;
+}
+
+.show{
+    position: absolute;
+    right: 13px;
+    font-size:10px;
+    font-weight:700;
+    color: #3498db;
+    margin-top:5%;
+    cursor: pointer;
+    display: none;
+}
+
+.pass-key:valid ~ .show{
+    display: block;
+}
+
+.fgt-pass{
+    text-align: right;
+    margin:  10px 0;
+}
+
+.fgt-pass input[type="checkbox"]{
+    float: left;
+    margin-top: 1.3%;
+}
+
+
+.terms-cond{
+    text-align: right;
+    margin:  10px 0;
+}
+
+.terms-cond input[type="checkbox"]{
+    float: left;
+    margin-top: 1.3%;
+}
+
+
+.link-term{
+    color: #46d1e0;
+}
+
+.remember-text{
+    float: left;
+    color: #fff;
+    font-size:14px;
+    margin-left: 3%;
+}
+
+.fgt-pass a{
+    text-align: right;
+    margin:  10px 0;
+    color:#46d1e0;;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.fgt-pass:hover a{
+    text-decoration: underline;
+}
+
+
+.submit-btn input{
+    background: #46d1e0;
+    border:none;
+    color: #fff;
+    font-size:14px;
+    height:45px;
+    width:100%;
+    letter-spacing:1px;
+    font-weight: 600;
+    cursor:pointer;
+    border-radius:15px;
+}
+
+.submit-btn input[type="submit"]:hover{
+    background:#3498db;
+}
+
+
+
+.register{
+    font-size:14px;
+    color:#fff;
+}
+
+.register a{
+    color:#46d1e0;;
+    text-decoration:none;
+}
+
+.register a:hover{
+    text-decoration:underline;
+}
