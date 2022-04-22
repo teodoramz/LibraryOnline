@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" lang="en">
+<head>
+    <title>BiblioTech</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/adminsubj.css">
+     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script type="text/javascript" src="../javascripts/main.js"></script>
+    <script type="text/javascript" src="../javascripts/adminpage.js"></script>
+</head>
+
+<body>
+   <div> 
+    <nav>
+        <label class="logo">BiblioTech</label>
+
+        <ul id="dashList">
+            <li><a href="AdminUsersPage.html">Users</a></li>
+            <li  onclick="nope()"><a href="#">Books</a></li>
+            <li><a  href="AdminSubjectsPage.html">Subjects</a></li>
+            <li><a  href="#" onclick="nope()">Borrowed/Going to be borrowed</a></li>
+
+            <li ><a href="#" ><a href="../Startup/LoginPage.html">LOGOUT</a></li>
+            
+        </ul>
+
+        <label id="icon" >
+            <p class="dashLines" onclick="change()">&#8803;</p>
+        </label>
+
+    </nav>
+    <div class="subjects-section">
+        <div class="area">
+            <header>Subjects</header>
+            <div class="space"></div>
+            <div class="space"></div>
+            <div class="submit-btn">
+                <input id="add-sjb" type="submit" value="Add subject" onclick="add()">
+            </div>
+            <div class="space"></div>
+            or
+            <div class="space"></div>
+            
+            <div class="divTable Subjects-table">
+                <div class="divTableHeading">
+                <div class="divTableRow">
+                <div class="divTableHead">ID</div>
+                <div class="divTableHead">Categorie</div>
+                <div class="divTableHead">Descriere</div>
+                <div class="divTableHead">Edit</div>
+                <div class="divTableHead">Remove</div>
+                </div>
+                </div>
+                <div class="divTableBody">
+                <div class="divTableRow">
+                <div class="divTableCell">1</div>
+                <div class="divTableCell">History</div>
+                <div class="divTableCell">ceva descriere</div>
+                <div class="divTableCell edit" onclick="edit('History', 'ceva descriere')">&#8593;&#8595;</div>
+                <div class="divTableCell remove">&#215;</div>
+                </div>
+                <div class="divTableRow">
+                <div class="divTableCell">2</div>
+                <div class="divTableCell">Fantasy</div>
+                <div class="divTableCell">ceva descriere</div>
+                <div class="divTableCell edit">&#8593;&#8595;</div>
+                <div class="divTableCell remove">&#215;</div>
+                </div>
+                <div class="divTableRow">
+                <div class="divTableCell">3</div>
+                <div class="divTableCell">Horror</div>
+                <div class="divTableCell">ceva descriere</div>
+                <div class="divTableCell edit"  onclick="edit('History', 'ceva descriere')">&#8593;&#8595;</div>
+                <div class="divTableCell remove">&#215;</div>
+                </div>
+                <div class="divTableRow">
+                <div class="divTableCell">4</div>
+                <div class="divTableCell">Biology</div>
+                <div class="divTableCell" >ceva descriere</div>
+                <div class="divTableCell edit"  onclick="edit('History', 'ceva descriere')">&#8593;&#8595;</div>
+                <div class="divTableCell remove">&#215;</div>
+                </div>
+                <div class="divTableRow">
+                <div class="divTableCell">5</div>
+                <div class="divTableCell">Design</div>
+                <div class="divTableCell">ceva descriere</div>
+                <div class="divTableCell edit"  onclick="edit('History', 'ceva descriere')">&#8593;&#8595;</div>
+                <div class="divTableCell remove">&#215;</div>
+                </div>
+                <div class="divTableRow">
+                <div class="divTableCell">6</div>
+                <div class="divTableCell">Architecture</div>
+                <div class="divTableCell">ceva descriere</div>
+                <div class="divTableCell edit"  onclick="edit('History', 'ceva descriere')">&#8593;&#8595;</div>
+                <div class="divTableCell remove">&#215;</div>
+                </div>
+                <div class="divTableRow">
+                <div class="divTableCell">7</div>
+                <div class="divTableCell">Fiction</div>
+                <div class="divTableCell">ceva descriere</div>
+                <div class="divTableCell edit"  onclick="edit('History', 'ceva descriere')">&#8593;&#8595;</div>
+                <div class="divTableCell remove">&#215;</div>
+                </div>
+                <div class="divTableRow">
+                <div class="divTableCell">8</div>
+                <div class="divTableCell">Romance</div>
+                <div class="divTableCell">ceva descriere</div>
+                <div class="divTableCell edit"  onclick="edit('History', 'ceva descriere')">&#8593;&#8595;</div>
+                <div class="divTableCell remove">&#215;</div>
+                </div>
+                <div class="divTableRow">
+                <div class="divTableCell">9</div>
+                <div class="divTableCell">Short Stories</div>
+                <div class="divTableCell">ceva descriere</div>
+                <div class="divTableCell edit"  onclick="edit('History', 'ceva descriere')">&#8593;&#8595;</div>
+                <div class="divTableCell remove">&#215;</div>
+                </div>
+                </div>
+                </div>
+            
+
+            
+        </div>
+    </div>
+
+
+    <div class="dashboard-background"></div>
+
+
+    </div>
+    
+    
+
+</body>
+
+
+</html>

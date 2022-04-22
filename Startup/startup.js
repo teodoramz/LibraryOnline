@@ -27,3 +27,6 @@ labelText.addEventListener("click", function(){
   function back() {
     window.location.assign('RegisterPage.html');
 }
+function goToDashBoard(){
+    window.location.assign('../UserPages/Dashboard.html');
+}

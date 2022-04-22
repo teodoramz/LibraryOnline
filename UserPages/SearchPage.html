@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" lang="en">
+<head>
+    <title>BiblioTech</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/search.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script type="text/javascript" src="../javascripts/main.js"></script>
+    <script type="text/javascript" src="../javascripts/pdfviewer.js"></script>
+</head>
+
+<body>
+   <div> 
+       <!-- //to do poza fundal sub navbar -->
+    <nav>
+        <label class="logo">BiblioTech</label>
+
+        <ul id="dashList">
+            <li><a  href="../AdminPages/AdminUsersPage.html">AdminPage</a></li>
+            <li><a  href="Dashboard.html">Home</a></li>
+            <li><a  href="AboutPage.html">About</a></li>
+            <li><a  href="#">Subjects</a></li>
+            <li><a class="active" href="SearchPage.html">Search</a></li>
+            <li><a  href="ContactPage.html">Contact</a></li>
+
+            <li id="username-loggedin"><a href="../Startup/LoginPage.html">Login</a></li>
+            <li> <a href="#" ><a href="../Startup/LoginPage.html">LOGOUT</a></li>
+
+        </ul>
+
+        <label id="icon" >
+            <p class="dashLines" onclick="change()">&#8803;</p>
+        </label>
+
+    </nav>
+    <div class="subjects-section">
+        <div class="area">
+            <header>Books</header>
+            <div class="space"></div>
+            <div class="subjects-table">
+                <div class="subjects-table bodySubj">
+                    <div class="subject-table-row">
+                        <div class="subject-table-cell" >
+                            <select class="categoryListBox">
+                                <option value="--Subjects--" selected>--Subjects--</option>
+                                <option value="History">History</option>
+                                <option value="Fantasy">Fantasy</option>
+                                <option value="Horror">Horror</option>
+                                <option value="Gold">Biology</option>
+                                <option value="Gold">Design</option>
+                                <option value="Gold">Architecture</option>
+                                <option value="Gold">Science Fiction</option>
+                                <option value="Gold">Romance</option>
+                                <option value="Gold">Short Stories</option>
+                              </select>
+                        </div>
+                        <div class="subject-table-cell" >
+                            <div class="cred1">
+                                <input type="text"  placeholder="Book's name">
+                            </div>
+                        </div>
+                        <div class="subject-table-cell" >
+                            <div class="cred1" id="v2">
+                                <input type="text"  placeholder="Author's name">
+                            </div>
+                        </div>
+                        <div class="subject-table-cell" >
+                            <div class="container-text2" >
+                                <div class="submit-btn">
+                                    <input  type="submit" value="Filter the search">
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            <div class="space"></div>
+            <div class="subjects-table">
+                <div class="subjects-table bodySubj">
+                    <div class="subject-table-row">
+                        <div class="subject-table-cell" >
+                            <div class="book-table">
+                                <div class="book-table bodySubj">
+                                    <div class="book-table-row" >
+                                        <div class="book-table-cell titleBook" >Kerrisk, Michael - The Linux programming interface</div>
+                                    </div>
+                                    <div class="book-table-row">
+                                        <div class="book-table-cell">
+                                            <div class="submit2-btn">
+                                                <input type="submit" value="Read pdf" onclick="openPdf(1)">
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="book-table-row">
+                                        <div class="book-table-cell">
+                                            <div class="submit2-btn">
+                                                <input type="submit" value="Borrow">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                             
+                        </div>
+                        <div class="subject-table-cell">
+                            <div class="book-table">
+                                <div class="book-table bodySubj">
+                                    <div class="book-table-row" >
+                                        <div class="book-table-cell titleBook" >Wetherall & Tanenbaum, Computer Networks</div>
+                                    </div>
+                                    <div class="book-table-row">
+                                        <div class="book-table-cell">
+                                            <div class="submit2-btn">
+                                                <input type="submit" value="Read pdf" onclick="openPdf(1)">
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="book-table-row">
+                                        <div class="book-table-cell">
+                                            <div class="submit2-btn">
+                                                <input type="submit" value="Borrow">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="subject-table-cell">
+                            <div class="book-table">
+                                <div class="book-table bodySubj">
+                                    <div class="book-table-row" >
+                                        <div class="book-table-cell titleBook">Yann Martel, Viata lui Pi</div>
+                                    </div>
+                                    <div class="book-table-row">
+                                        <div class="book-table-cell">
+                                            <div class="submit2-btn">
+                                                <input type="submit" value="Read pdf" onclick="openPdf(1)">
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="book-table-row">
+                                        <div class="book-table-cell">
+                                            <div class="submit2-btn">
+                                                <input type="submit" value="Borrow">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="dashboard-background"></div>
+</body>
+
+
+</html>

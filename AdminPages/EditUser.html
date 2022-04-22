@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" lang="en">
+<head>
+    <title>BiblioTech</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/adminsubj.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script type="text/javascript" src="../javascripts/main.js"></script>
+    <script type="text/javascript" src="../javascripts/adminpage.js"></script>
+</head>
+
+<body>
+   <div> 
+       <!-- //to do poza fundal sub navbar -->
+    <nav>
+        <label class="logo">BiblioTech</label>
+
+        <ul id="dashList">
+            <li><a href="AdminUsersPage.html">Users</a></li>
+            <li><a href="#" onclick="nope()">Books</a></li>
+            <li><a  href="AdminSubjectsPage.html">Subjects</a></li>
+            <li><a  href="#" onclick="nope()">Borrowed/Going to be borrowed</a></li>
+
+            <li ><a href="#" ><a href="../Startup/LoginPage.html">LOGOUT</a></li>
+        </ul>
+
+        <label id="icon" >
+            <p class="dashLines" onclick="change()">&#8803;</p>
+        </label>
+
+    </nav>
+    <div class="add-section">
+        <div class="area" id="profileArea">
+            <header>Add User</header>
+            <form action="#">
+                <div class="contact1">
+                    <input id="fullname" type="text" placeholder="Full name">
+                    <label class="switch">
+                        <input id="check6" name="check6" type="checkbox" onclick="setReadOnlyFunc(6)">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="space"></div>
+                <div class="contact1">
+                    <input id="username" type="text" placeholder="Username">
+                    <label class="switch">
+                        <input id="check6" name="check6" type="checkbox" onclick="setReadOnlyFunc(6)">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="space"></div>
+                <div class="contact1">
+                    <input id="role" type="text" placeholder="Role(Admin/User)" >
+                    <label class="switch">
+                        <input id="check6" name="check6" type="checkbox" onclick="setReadOnlyFunc(6)">
+                        <span class="slider round"></span>
+                    </label>
+                    
+                </div>
+                <div class="space"></div>
+                <div class="contact1">
+                    <input id="email" type="email" placeholder="Email" >
+                    <label class="switch">
+                        <input id="check6" name="check6" type="checkbox" onclick="setReadOnlyFunc(6)">
+                        <span class="slider round"></span>
+                    </label>
+                    
+                </div>
+                <div class="space"></div>
+                <div class="contact1">
+                    <input id="phone" type="phone" placeholder="Phone" >
+                    <label class="switch">
+                        <input id="check6" name="check6" type="checkbox" onclick="setReadOnlyFunc(6)">
+                        <span class="slider round"></span>
+                    </label>
+                   
+                </div>
+                <div class="space"></div>
+                <div class="contact1">
+                    <input id="pass" type="password" placeholder="Pasword" >  
+                    <label class="switch">
+                        <input id="check6" name="check6" type="checkbox" onclick="setReadOnlyFunc(6)">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="space"></div>
+                
+                <div class="submit-btn">
+                    <input type="submit" value="Save changes">
+                </div>
+            </form>
+            
+            
+        </div>
+    </div>
+
+    <div class="dashboard-background"></div>
+
+
+</body>
+
+
+</html>
