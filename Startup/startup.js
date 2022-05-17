@@ -24,9 +24,24 @@ labelText.addEventListener("click", function(){
     }
 });
 
-  function back() {
-    window.location.assign('RegisterPage.html');
+const labelText2 = document.getElementById("remember-text2");
+const checkRemember2 = document.getElementById("checkbox2");
+labelText2.addEventListener("click", function(){
+    if(checkRemember2.checked == true){
+        checkRemember2.checked = false;
+    }
+    else{
+        checkRemember2.checked = true;
+    }
+});
+
+function back() {
+    window.location.href='RegisterPage.php';
 }
-function goToDashBoard(){
-    window.location.assign('../UserPages/Dashboard.html');
+
+
+function clearTextBoxes(){
+    document.getElementById('box1').value = '';
+    document.getElementById('box2').value = '';
+    document.getElementById("checkbox").checked = false;
 }

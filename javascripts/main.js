@@ -142,15 +142,15 @@ if(x == 6){
 
 
 function aboutPage() {
-  window.location.assign('AboutPage.html');
+  window.location.assign('AboutPage.php');
 }
 
 function subjectsPage() {
-  window.location.assign('SubjectsPage.html');
+  window.location.assign('SubjectsPage.php');
 }
 
 function contactPage() {
-  window.location.assign('ContactPage.html');
+  window.location.assign('ContactPage.php');
 }
 
 
@@ -186,3 +186,14 @@ function rightBtnExe() {
   document.getElementById("subj-input").classList.toggle(subjCls[idSubj]);
 }
 
+function openPdf(x){
+  window.location.assign('ReadPdf.php?' + x);
+}
+
+function borrowBook(x){
+  window.location.assign('BorrowBooks.php?' + x);
+}
+
+function goBooks(x){
+  window.location.assign('SearchPage.php?' + x);
+}
