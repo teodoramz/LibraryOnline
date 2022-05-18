@@ -20,7 +20,7 @@
        else{
             try{
            $goodPass = encryptPass($pass);
-           $sql = "Insert into users (Fullname, Username, Email, Phone, RoleId, Password) values('$fullname','$username','$email','$phone', 1 ,'$goodPass')";
+           $sql = "Insert into users (Fullname, Username, Email, Phone, RoleId, Password) values('$fullname','$username','$email','$phone', 2 ,'$goodPass')";
             
             $conn->exec($sql);
 
